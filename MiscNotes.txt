@@ -1,0 +1,5 @@
+nslookup resources:
+
+https://www.cloudns.net/blog/10-most-used-nslookup-commands/
+
+https://linux.die.net/man/1/nslookup
