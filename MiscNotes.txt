@@ -3,3 +3,10 @@ nslookup resources:
 https://www.cloudns.net/blog/10-most-used-nslookup-commands/
 
 https://linux.die.net/man/1/nslookup
+
+
+Internet Protocol resources:
+
+traceroute:
+
+https://datatracker.ietf.org/doc/html/rfc2151
