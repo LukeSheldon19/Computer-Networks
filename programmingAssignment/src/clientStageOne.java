@@ -22,6 +22,7 @@ public class clientStageOne {
             String modifiedSentence = inFromServer.readLine();
             System.out.println("FROM SERVER: " + modifiedSentence);
 
+            clientSocket.close();
         } catch (Exception e) {
             e.printStackTrace();
         }

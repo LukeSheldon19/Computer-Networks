@@ -21,11 +21,22 @@ public class serverStageOne {
                 String clientSentence = inFromClient.readLine();
                 String capitalizedSentence = clientSentence.toUpperCase() + '\n';
 
+                if(clientSentence.equals("rdy")){
+                    outToClient.writeBytes("rdy to go");
+                }
+                else{
+                    outToClient.writeBytes(capitalizedSentence);
+                }
+
                 // Send modified message back
-                outToClient.writeBytes(capitalizedSentence);
+//                outToClient.writeBytes(capitalizedSentence);
 
                 // Close the connection
+//                if(clientSentence.equals("close")){
+//                    connectionSocket.close();
+//                }
                 connectionSocket.close();
+                inFromClient.close();
             }
         } catch (Exception e) {
             e.printStackTrace();
